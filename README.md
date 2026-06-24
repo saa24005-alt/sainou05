@@ -1,118 +1,137 @@
+```html
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>作物紹介サイト</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>キウイフルーツ紹介サイト</title>
 
-    <style>
-        body{
-            margin:0;
-            font-family:"Yu Gothic",sans-serif;
-            background-color:#f5fff0;
-        }
+<style>
+body{
+    font-family: Yu Gothic, sans-serif;
+    background-color: #f0fff0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
 
-        header{
-            background-color:#4CAF50;
-            color:white;
-            text-align:center;
-            padding:20px;
-        }
+header{
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
 
-        nav{
-            background-color:#388E3C;
-            padding:10px;
-            text-align:center;
-        }
+section{
+    width: 80%;
+    margin: 20px auto;
+}
 
-        nav a{
-            color:white;
-            text-decoration:none;
-            margin:0 20px;
-            font-weight:bold;
-        }
+img{
+    display: block;
+    margin: 20px auto;
+    width: 400px;
+    max-width: 100%;
+    border-radius: 10px;
+}
 
-        .container{
-            width:90%;
-            margin:auto;
-            padding:20px;
-        }
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
 
-        .crop{
-            background-color:white;
-            border-radius:15px;
-            box-shadow:0 3px 10px rgba(0,0,0,0.2);
-            margin-bottom:30px;
-            padding:20px;
-        }
+th, td{
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+}
 
-        .crop img{
-            width:100%;
-            max-width:400px;
-            border-radius:10px;
-            display:block;
-            margin:auto;
-        }
+th{
+    background-color: #90EE90;
+}
 
-        h2{
-            color:#2E7D32;
-        }
+.button{
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 8px;
+}
 
-        footer{
-            background-color:#4CAF50;
-            color:white;
-            text-align:center;
-            padding:15px;
-        }
-    </style>
+.button:hover{
+    background-color: #388E3C;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-    <h1>🍎 作物紹介サイト</h1>
-    <p>さまざまな作物の特徴や栄養について紹介します</p>
+    <h1>キウイフルーツ</h1>
 </header>
 
-<nav>
-    <a href="#kiwi">キウイ</a>
-    <a href="#tomato">トマト</a>
-    <a href="#strawberry">イチゴ</a>
-</nav>
+<section>
 
-<div class="container">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Kiwi_aka.jpg" alt="キウイフルーツ">
 
-    <section class="crop" id="kiwi">
-        <h2>🥝 キウイ</h2>
-        <img src="kiwi.jpg" alt="キウイ">
-        <p>
-            キウイはビタミンCや食物繊維が豊富な果物です。
-            ニュージーランドで多く栽培されており、甘みと酸味のバランスが特徴です。
-        </p>
-    </section>
+    <h2>キウイフルーツの特徴</h2>
 
-    <section class="crop" id="tomato">
-        <h2>🍅 トマト</h2>
-        <img src="tomato.jpg" alt="トマト">
-        <p>
-            トマトにはリコピンが含まれており、抗酸化作用があります。
-            サラダやパスタなど、さまざまな料理に利用されます。
-        </p>
-    </section>
+    <p>
+        キウイフルーツはニュージーランドで広く栽培されている果物です。
+        ビタミンCや食物繊維を豊富に含み、健康によい果物として知られています。
+        甘味と酸味のバランスがよく、そのまま食べたりデザートに利用したりできます。
+        また、追熟させることでやわらかくなり、より甘くなります。
+    </p>
 
-    <section class="crop" id="strawberry">
-        <h2>🍓 イチゴ</h2>
-        <img src="strawberry.jpg" alt="イチゴ">
-        <p>
-            イチゴは甘くて香りがよく、ビタミンCが豊富です。
-            ケーキやジャムなどにも利用されています。
-        </p>
-    </section>
+    <h2>栽培のポイント</h2>
 
-</div>
+    <ul>
+        <li>日当たりのよい場所で育てる。</li>
+        <li>つるが伸びるため棚を設置する。</li>
+        <li>水切れに注意して管理する。</li>
+        <li>定期的に剪定を行う。</li>
+    </ul>
 
-<footer>
-    <p>© 2026 作物紹介サイト</p>
-</footer>
+    <h2>基本情報</h2>
+
+    <table>
+        <tr>
+            <th>項目</th>
+            <th>内容</th>
+        </tr>
+        <tr>
+            <td>種まき時期</td>
+            <td>3〜4月</td>
+        </tr>
+        <tr>
+            <td>収穫時期</td>
+            <td>10〜11月</td>
+        </tr>
+        <tr>
+            <td>難易度</td>
+            <td>★★★☆☆</td>
+        </tr>
+    </table>
+
+    <h2>参考サイト</h2>
+
+    <a class="button"
+       href="https://saijo-ah.esnet.ed.jp/"
+       target="_blank">
+       西条農業高校
+    </a>
+
+    <a class="button"
+       href="https://www.sakataseed.co.jp/"
+       target="_blank">
+       栽培方法を見る
+    </a>
+
+</section>
 
 </body>
 </html>
+```
